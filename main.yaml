@@ -1,0 +1,7 @@
+- name : "install {{compnent}}"
+  hosts : "{{component}}"
+  var_files:
+  - variables.yaml
+  become: yes
+  roles:
+  - "{{component}}"
